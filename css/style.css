@@ -40,6 +40,31 @@ img {
 	padding: 10px;
 }
 
+figure {
+	margin: 0;
+	line-height: 0;
+	position: relative;
+}
+
+figcaption {
+	font-size: .9em;
+	line-height: 1.5;
+	color: #fff;
+	padding: 1em;	
+	background: rgba(19,43,102, .85);
+	position: absolute;
+	bottom: 0;
+	width: 100%
+
+}
+
+.icon-location {
+	width: 35px;
+	position: absolute;
+	top: -15px;
+	right: -15px;
+
+}
 /* ================================= 
   Base Layout Styles
 ==================================== */
@@ -96,6 +121,18 @@ img {
 
 @media (min-width: 769px) {
 
+	body {
+		padding-top: 58px;
+	}
+
+	.main-header {
+		position: fixed;
+		background: #fff;
+		box-shadow: 0 1px 4px rgba(0,0,0,.4);
+		width: 100%;
+		top: 0;
+		z-index: 1;
+	}
 	
 	.container {
 		width: 85%;
